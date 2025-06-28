@@ -70,5 +70,20 @@ class _AddGroceryPageState extends State<AddGroceryPage> {
           decoration: const InputDecoration(labelText: 'Quantity'),
         ),
         const SizedBox(height: 16),
-      ElevatedButton(onPressed: _addGrocery, child: const Text("Add Grocery"))
+      ElevatedButton(onPressed: _addGrocery, child: const Text("Add Grocery"),),
+        const SizedBox(height: 16),
+        const Text(
+          'Grocery List',
+          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+        ),
+        const SizedBox(height: 8),
+        ..._groceries.map((grocery) => ListTile(
+              leading: grocery['image'] != null
+                  ? Image.file(grocery['image'], width: 50, height: 50)
+                  : null,
+              title: Text(grocery['name']),
+              subtitle: Text('Qty: ${grocery['qty']}'),
+            )),
+      ],
 
+    );}}
