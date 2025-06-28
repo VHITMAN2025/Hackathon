@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "134987735747",
+    "project_id": "smarthome-36616",
+    "storage_bucket": "smarthome-36616.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134987735747:android:f2ba9e0c4fce6cc5d5f876",
+        "android_client_info": {
+          "package_name": "com.example.google_signin_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAC-DfChpckqD39DXHF-ABsyBZVvE69GyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
